@@ -60,9 +60,9 @@ p {
         width: 50%;        
     }
 
-    #special {
+    #specialbox {
         width: 100%;
-        .float2 {
+        #special {
             padding: 10px;
         }
     }
