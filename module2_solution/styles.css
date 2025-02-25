@@ -3,36 +3,77 @@
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 h1 {
+    font-size: 175%;
     text-align: center;
     margin: 50px auto;
 }
 
-#main {
-    background-color: black;
-    width: 100%;
+.float1 {
+    padding: 10px;
+    float: left;
+}
 
-    .floating-section {
-        width: 33.33%;
-        background-color: gray;
-        margin: 5px;
-        border: 3px solid black;
-        float: left;
-    }
+.float2 {
+    background-color: lightgrey;
+    border: 1px solid black;
+    padding: 15px;
 }
 
 h2 {
-    background-color: white;
+    font-size: 125%;
     float: right;
-    text-align: center;
-    outline: 3px solid black;
-    padding: 2px 40px;
+    border: 1px solid black;
+    padding: 3px 40px;
 }
 
 p {
     clear: right;
-    margin: 10px;
-    padding-top: 10px;
+    margin-top: 30px;
+}
+
+#chick {
+    background: greenyellow;
+}
+
+#cow {
+    background: darkblue;
+    color: white;
+}
+
+#fish {
+    background: darkorchid;
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .float1 {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    .float1 {
+        width: 50%;        
+    }
+
+    #special {
+        width: 100%;
+        .float2 {
+            padding: 10px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .float1 {
+        width: 100%;
+    }
+
+    .float2 {
+        padding: 10px;
+    }
 }
